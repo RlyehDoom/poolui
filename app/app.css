@@ -13,7 +13,7 @@ a {
   color: #3287b3;
 }
 
-a:link { text-decoration: none; },
+a:link { text-decoration: none; }
 a:visited { color: #3b98c8; }
 a:hover   { color: #3b98c8; }
 a:active  {

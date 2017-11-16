@@ -56,7 +56,7 @@ md-tooltip .md-content {
 }
 
 .sidenav {
-  background-color: #2b333e;
+  background-color: green;
 }
 
 .sidenav ul{
@@ -101,13 +101,17 @@ md-tooltip .md-content {
 }
 
 .logo {
-  background: #333d4b !important;
+  background: #0f5a0f !important;
   color: #fff !important;
 }
 
 .logo i {
   color: #00b0ff;
   font-weight: 700;
+}
+
+.list {
+  background-color: #0c6d0c;
 }
 
 /* HELPERS */

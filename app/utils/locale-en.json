@@ -33,7 +33,8 @@
         "ALLTOGETHER"   : {
             "INTRO"         : "The moment",
             "INTRO-2"       : "OK So by now you should have a wallet, mining software, url and port. Its time to put them together.",
-            "TODO"          : "<p>Here are some examples of the parameters that you need to pass on to your miner software, the format matters so be careful.</p><p>Depending on your miner you need to add the required parameters via command line or config.txt</p><p>Required fields are payment <b>address</b> and <b>MinerIdentifier</b></p>"
+            "TODO"          : "<p>Here are some examples of the parameters that you need to pass on to your miner software, the format matters so be careful.</p><p>Depending on your miner you need to add the required parameters via command line or config.txt</p><p>Required fields are payment <b>address</b> and <b>MinerIdentifier</b></p>",
+            "ENJOY"         : "Happy Minning!"
         }
     }
 }

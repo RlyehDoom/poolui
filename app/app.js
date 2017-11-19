@@ -19,7 +19,7 @@ var app = angular.module('poolui', [
 	]).config(['$locationProvider', '$routeProvider', '$mdThemingProvider','$translateProvider', function($locationProvider, $routeProvider, $mdThemingProvider, $translateProvider) {
 		
 		$translateProvider.useStaticFilesLoader({
-			prefix: '/vendor/angular-locale/locale-',
+			prefix: '/utils/locale-',
 			suffix: '.json'
 		});
 		

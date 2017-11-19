@@ -1,0 +1,39 @@
+{
+    "GENERAL": { 
+        "WELCOME"       :"Welcome! to" 
+    },
+    "STARTED" : {
+        "WELCOME"       : "How to start mining? on",
+        "INTRO-LINE-1"  : "If you are new to mining, this is the place for you.",
+        "INTRO-LINE-2"  : "take a deep breath, its only confusing at first but pure joy once up and running",
+
+        "FIRST"         : {
+
+            "STEP-INTRO"    : "First step   : Create a Wallet",
+            "STEP-1"        : "Both online wallets and hardware wallets have their pros and cons:",
+            "STEP-2"        : "<a href=\"https://www.mymonero.com\" target=\"_blank\">MyMonero</a> is an online wallet maintained by the core monero team, so while safe is still suceptable to hacks.",
+            "STEP-3"        : "<a href=\"https://play.google.com/store/apps/details?id=xmr.org.freewallet.app\" target=\"_blank\">Free Wallet Monero</a> is an online/mobile wallet created by third parties, suceptable to hacks.",
+            "STEP-4"        : "<a href=\"https://getmonero.org/downloads/\" target=\"_blank\">Monero GUI Wallet</a> The safest way to safely store and secure your XMR, although it would be your responsibility to kee your XMR Safe"
+        },
+        "SECOND"        : {
+            "STEP-INTRO"    : "Second step  : Download mining software",
+            "STEP-INTRO-2"  : "Choose the miners according to your Hardware:",
+            "STEP-1"        : "<a href=\"https://www.dropbox.com/s/h14hbmpz46na9wv/xmr-stak-cpu.7z?dl=0\" target=\"_blank\">XMR-STAK-CPU</a>",
+            "STEP-2"        : "<a href=\"https://www.dropbox.com/s/vnoz19f3jccvh32/xmr-stak-amd.7z?dl=0\" target=\"_blank\">XMR-STAK-GPU AMD</a>",
+            "STEP-3"        : "<a href=\"https://www.dropbox.com/s/vnoz19f3jccvh32/xmr-stak-amd.7z?dl=0\" target=\"_blank\">XMR-STAK-GPU NVIDIA</a>",
+            "STEP-FINAL"    : "<i>The files are compressed with 7zip and the password is : <b>cryptominers.cl</b></i>",
+            "STEP-NOTE"     : "Note: <i>Some antivirus may flag this file as a 'virus'. because some malware install miners on your pc without your consent. (just whitelist this file on your antivirus/firewall)</i>"
+        },
+        "THIRD"         : {
+            "STEP-INTRO"    : "Third step   : Pick a server and port",
+            "STEP-INTRO-2"  : "There are 2 important things here the <b>URL</b> and the <b>port</b> that you are going to connect to",
+            "STEP-1"        : "<p>You need to pick your URL and Port from the Ports List. Here you'll notice theres Global, PPLNS, Solo (<a href=\"#/help/faq\">?</a>)</p><p>Global is simply a collection of both PPLNS & Solo ports powerd by GEODNS. <br/>GEODNS automagically finds the closest server to you and could also be used to shares you in case of a regional outage.</p><p>If you prefer to shave off a few of those ms and connect directly, you have the option to select your preferred endpoint too.</p><p>The Port is used in conjunciton with the url and is used to specify the starting difficulty. You should select this depending on the total #ing power of your rig (see port descriptions).</p><p>If you are an advanced user or would like to set a fixed difficulty. examples below.</p>",
+            "VIEW-PORTS"    : "View Ports list"
+        },
+        "ALLTOGETHER"   : {
+            "INTRO"         : "The moment",
+            "INTRO-2"       : "OK So by now you should have a wallet, mining software, url and port. Its time to put them together.",
+            "TODO"          : "<p>Here are some examples of the parameters that you need to pass on to your miner software, the format matters so be careful.</p><p>Depending on your miner you need to add the required parameters via command line or config.txt</p><p>Required fields are payment <b>address</b> and <b>MinerIdentifier</b></p>"
+        }
+    }
+}

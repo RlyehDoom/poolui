@@ -20,6 +20,12 @@ gulp.task('js', function(){
     .pipe(gulp.dest('build/'))
 });
 
+gulp.task('json', function(){
+  return gulp.src(['app/**/locale-*.json', '!app/vendor/**/*'])
+    .pipe(connect.reload())
+    .pipe(gulp.dest('build/'))
+});
+
 gulp.task('assets', function(){
   return gulp.src('app/assets/*')
     .pipe(connect.reload())
@@ -58,7 +64,6 @@ gulp.task('vendor', function() {
     'app/vendor/**/page_visibility.js',
     'app/vendor/**/angular-translate.js',
     'app/vendor/**/angular-translate-loader-static-files.js',
-    'app/vendor/**/locale-*.json',
     'app/vendor/**/angular-sanitize.js'
     ])
     .pipe(gulp.dest('build/vendor'))
@@ -69,7 +74,7 @@ gulp.task('watch', function () {
   gulp.watch(['./app/**/*.css'], ['css', 'manifest']);
   gulp.watch(['./app/**/*.js'], ['js', 'manifest']);
   gulp.watch(['./assets/*.*'], ['assets', 'manifest']);
-  gulp.watch(['./vendor/angular-locale/*.js'], ['vendor', 'manifest']);
+  gulp.watch(['./utils/*.*'], ['json', 'manifest']);
 });
 
 gulp.task('manifest', function(){
@@ -87,5 +92,5 @@ gulp.task('manifest', function(){
     .pipe(gulp.dest('build'));
 });
 
-gulp.task('build', [ 'html', 'css', 'js', 'assets', 'vendor', 'manifest' ]);
+gulp.task('build', [ 'html', 'css', 'js', 'json','assets', 'vendor', 'manifest' ]);
 gulp.task('default', [ 'build', 'connect', 'watch' ]);

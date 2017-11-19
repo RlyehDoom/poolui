@@ -17,6 +17,7 @@
     "start": "gulp"
   },
   "dependencies": {
+    "angular-sanitize": "^1.6.6",
     "n3-charts": "^2.0.28",
     "randomcolor": "^0.4.4"
   }

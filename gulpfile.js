@@ -55,7 +55,11 @@ gulp.task('vendor', function() {
     'node_modules/**/LineChart.css',
     'node_modules/**/randomColor.js',
     'app/vendor/**/lodash.js',
-    'app/vendor/**/page_visibility.js'
+    'app/vendor/**/page_visibility.js',
+    'app/vendor/**/angular-translate.js',
+    'app/vendor/**/angular-translate-loader-static-files.js',
+    'app/vendor/**/locale-*.json',
+    'app/vendor/**/angular-sanitize.js'
     ])
     .pipe(gulp.dest('build/vendor'))
 });
@@ -65,6 +69,7 @@ gulp.task('watch', function () {
   gulp.watch(['./app/**/*.css'], ['css', 'manifest']);
   gulp.watch(['./app/**/*.js'], ['js', 'manifest']);
   gulp.watch(['./assets/*.*'], ['assets', 'manifest']);
+  gulp.watch(['./vendor/angular-locale/*.js'], ['vendor', 'manifest']);
 });
 
 gulp.task('manifest', function(){

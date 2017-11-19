@@ -13,10 +13,21 @@ var app = angular.module('poolui', [
 	'utils.services',
 	'utils.xhr',
 	'n3-line-chart',
-	'angular-page-visibility'
-	]).config(['$locationProvider', '$routeProvider', '$mdThemingProvider', function($locationProvider, $routeProvider, $mdThemingProvider) {
-		$locationProvider.hashPrefix('')
-		;	
+	'angular-page-visibility',
+	'pascalprecht.translate',
+	'ngSanitize'
+	]).config(['$locationProvider', '$routeProvider', '$mdThemingProvider','$translateProvider', function($locationProvider, $routeProvider, $mdThemingProvider, $translateProvider) {
+		
+		$translateProvider.useStaticFilesLoader({
+			prefix: '/vendor/angular-locale/locale-',
+			suffix: '.json'
+		});
+		
+		$translateProvider.preferredLanguage('es');
+		$translateProvider.determinePreferredLanguage();
+		
+		$locationProvider.hashPrefix('');
+
 		$mdThemingProvider.theme('default')
 		.primaryPalette('grey')
 		.accentPalette('light-blue');
@@ -72,7 +83,7 @@ var app = angular.module('poolui', [
 
 	}]);
 
-	app.controller('AppCtrl', function($scope, $rootScope, $location, $route, $routeParams, $anchorScroll, $window, $interval, $mdDialog, dataService, timerService, addressService, $mdSidenav, $mdMedia, $localStorage, ngAudio, GLOBALS){
+	app.controller('AppCtrl' , function($scope, $rootScope, $location, $route, $routeParams, $translate, $anchorScroll, $window, $interval, $mdDialog, dataService, timerService, addressService, $mdSidenav, $mdMedia, $localStorage, ngAudio, GLOBALS){
 		$scope.GLOBALS = GLOBALS;
 		var appCache = window.applicationCache;
 		$scope.$storage = $localStorage;
@@ -89,6 +100,11 @@ var app = angular.module('poolui', [
 		$scope.globalSiren = false;
 		$scope.sirenAudio = ngAudio.load("assets/ding.wav");
 		
+		//
+		$scope.changeLanguage = function (langKey) {
+			$translate.use(langKey);
+		};
+
 		// Update global hashrate and set off alarm if any of the tracked addresses fall below the threshold
 		var updateHashRate = function (addrStats){
 			var totalHashRate = 0;

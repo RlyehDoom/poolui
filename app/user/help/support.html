@@ -1,0 +1,19 @@
+<!-- <ng-include src="'dashboard/poolstats.html'"></ng-include> -->
+<div layout-sm="column" layout="row" flex>
+        <div layout="column" flex>
+            <md-card>
+                <md-toolbar class="md-table-toolbar md-default">
+                  <div class="md-toolbar-tools">
+                    <span class="md-title">{{'SUPPORT.SUPPORT-FB' | translate }} <span class="md-caption">{{'SUPPORT.SUPPORT-TIP' | translate }}</span></span>
+                  </div>
+                </md-toolbar>
+                <md-card-content>
+                        <div id="fb-comment-box" dyn-fb-comment-box
+                        page-href="https://www.cryptominers.cl"
+                        numposts="10"
+                        colorscheme="light" orderby="time" width="100%"></div>
+                    <!-- <div class="fb-comments" data-href="https://www.cryptominers.cl" data-numposts="10"></div> -->
+                </md-card-content>
+            </md-card>
+        </div>
+    </div>

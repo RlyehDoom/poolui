@@ -1,5 +1,5 @@
 {
-  "name": "xmrpoolui",
+  "name": "cryptominers-ui",
   "private": true,
   "dependencies": {
     "angular": "~1.6.1",

@@ -5,7 +5,7 @@ html, body {
   font-size:14px;
   margin: 0px;
   padding: 0px;
-  min-width: 420px;
+  min-width: 342px;
 }
 
 a {
@@ -93,11 +93,11 @@ md-tooltip .md-content {
 
 .sidebar md-icon, .sidebar ng-md-icon {
   vertical-align: middle;
-  padding-left: 40px;
+  padding-left: 5px;
 }
 
 #content  {
-  padding: 40px;
+  padding: 5px;
 }
 
 .logo {
@@ -226,4 +226,53 @@ md-dialog .login{
 
 .theironfist {
   cursor: pointer;
+}
+
+
+.golden a {
+  color: #b16606;
+}
+.golden a:hover {
+  color: #f0a953;
+}
+.golden a:visited {
+  color: #b16606;
+}
+.golden a:active {
+  color: #b16606;
+}
+
+@media (max-width: 767px) {
+  #fb-like-button {
+    display: none;
+  }
+}
+
+md-card {
+  margin:5px;
+}
+
+md-card md-card-title md-card-title-media .md-media-sm {
+  height: 32px;
+  width: 32px; 
+}
+
+md-card md-card-title md-card-title-media {
+  margin-top: 6px;
+}
+
+#poolStatsContainer .md-headline {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.md-tooltip {
+  text-align: center;
+  height: auto !important;
+  font-size: 14px !important;
+  line-height: auto;
+  /*background-color: red !important;
+  color: white !important;*/
+  border-radius: 5px;
 }

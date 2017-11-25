@@ -1,30 +1,25 @@
 <md-card-content>
 	<div class="md-headline">{{ 'GENERAL.WELCOME' | translate }} {{GLOBALS.pool_name}}</div>
-	<h3>We are proud to announce our MONERO(XMR) pool!</h3>
-	<p>Everyone is welcome to join our super sleek pool with a very low fee (0.5%)</p>
+	<h3>{{ 'WELCOME-PAGE.INTRO' | translate }}</h3>
+	<p><span ng-bind-html="'WELCOME-PAGE.INTRO-2' | translate"></span></p>
 
-	<h2>The first 5 blocks would give a special bonus to the top miners! as a thank for helping us to build this POOL!</h2>
+	<h2><span ng-bind-html="'WELCOME-PAGE.BONUS-IMPORTANT' | translate"></span></h2>
 	<br />
 	<p>
-		<b>Important! :</b>
+		<b>{{ 'WELCOME-PAGE.IMPORTANT' | translate }} :</b>
 	</p>
-	<p>Use our "tuned" mining software for windows in our POOL and low you fee to
-		<b>0% </b> (other pools is around 1% to 2.5%) </p>
+	<span ng-bind-html="'WELCOME-PAGE.BONUS-IMPORTANT-2' | translate"></span>
 
-	<p>XMR-STAK-AMD (GPU) : </p>
-	<a href="https://www.dropbox.com/s/vnoz19f3jccvh32/xmr-stak-amd.7z?dl=0" target="_blank">Download</a>
-	<p>XMR-STAK-CPU :</p>
-	<a href="https://www.dropbox.com/s/h14hbmpz46na9wv/xmr-stak-cpu.7z?dl=0" target="_blank;">Download</a>
-
+	<p>XMR-STAK-ALL-IN-ONE (ALLMIGHTY) :</p>
+	<a href="https://1drv.ms/u/s!AivaIzU_l87LymsTBsVpXD2l9tzG" target="_blank;">{{ 'WELCOME-PAGE.DOWNLOAD-TEXT' | translate }}</a>
 	<br />
 
-	<p>
-		<b>Tip:</b> Unzip with "7zip" and the password for the file is : cryptominers.cl</p>
+	<span ng-bind-html="'WELCOME-PAGE.TIP' | translate"></span>
 
 	<br />
-	<p>Our tuned XMR-STAK software should look like this once is running:</p>
+	<p>{{ 'WELCOME-PAGE.EXAMPLE-TEXT-1' | translate }}</p>
 	<img src="https://i.imgur.com/rmMq7hL.png" style="max-width:100%; height:auto;"></img>
 	<br />
-	<p>XMR-STAK Config sample:</p>
+	<p>{{ 'WELCOME-PAGE.EXAMPLE-TEXT-2' | translate }}</p>
 	<img src="https://i.imgur.com/3fQ8txN.png" style="max-width:100%; height:auto;"></img>
 </md-card-content>

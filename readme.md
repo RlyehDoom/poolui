@@ -1,4 +1,4 @@
-# Monero Pool frontend
+# Monero Pool frontend / Multilanguage Ready
 
 ### AngularJS based UI for [nodejs-pool](https://github.com/Snipa22/nodejs-pool)
 

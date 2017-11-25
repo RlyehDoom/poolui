@@ -2,7 +2,7 @@
   <md-content class="login">
     <md-toolbar>
       <div class="md-toolbar-tools">
-        <h2>Miner Login</h2>
+        <h2>Miner - {{ 'GENERAL.LABELS.LOGIN' | translate }}</h2>
         <span flex></span>
         <md-button class="md-icon-button" ng-click="cancel()">
           <md-icon aria-label="Close dialog">clear</md-icon>
@@ -15,15 +15,15 @@
         <div>
           <md-input-container class="md-icon-float md-block">
             <!-- Use floating label instead of placeholder -->
-            <label>Payment Address</label>
+            <label>{{ 'GENERAL.LABELS.PAYMENTADDRESS' | translate }}</label>
             <md-icon>person</md-icon>
             <input ng-model="user.username" name="username" type="text" md-autofocus>
           </md-input-container>
 
           <md-input-container class="md-icon-float md-block">
-            <label>Password</label>
+            <label>{{ 'GENERAL.LABELS.PASSWORD' | translate }}</label>
             <md-icon>lock</md-icon>
-            <input ng-model="user.password" name="password" type="password" placeholder="your email identifier (read Getting Started to set one)">
+            <input ng-model="user.password" name="password" type="password" placeholder="{{'GENERAL.LABELS.PASS-PLACEHOLDER' | translate }}">
           </md-input-container>
         </div>
       </form>
@@ -31,12 +31,12 @@
 
     <md-dialog-actions layout="row">
       <md-checkbox class="md-primary" ng-model="remember">
-        Remember me
+          {{ 'GENERAL.LABELS.REMEMBERME' | translate }}
       </md-checkbox>
       <span flex></span>
       <p class="invalid">{{status}}</p>
       <md-button class="md-raised md-primary" ng-click="login()">
-        Login
+        {{ 'GENERAL.LABELS.LOGIN' | translate }}
       </md-button>
     </md-dialog-actions>
   </md-content>

@@ -1,0 +1,90 @@
+{
+    "GENERAL"   :   { 
+        "WELCOME"       :"Welcome! to",
+        "LABELS"    :   {
+            "NETWORK"   :   "Network",
+            "POOL"      :   "Pool",
+            "YOU"       :   "You",
+            "LOGIN"     :   "Login",
+            "REMEMBERME":   "Remember me",
+            "PASSWORD"  :   "Password",
+            "PASS-PLACEHOLDER"  : "Your email identifier (read Getting Started to set one)",
+            "PAYMENTADDRESS"    :   "Payment Address"
+        },
+        "PAGES" :   {
+            "HOME"      :   "Home",
+            "DASHBOARD" :   "Dashboard",
+            "BLOCKS"    :   "Blocks",
+            "PAYMENT"   :   "Payments",
+            "PORTS"     :   "Ports",
+            "NETWORK"   :   "Network",
+            "SUPPORT"   :   "Support",
+            "STARTING"  :   "Getting Started",
+            "FAQ"       :   "FAQ"
+        }
+    },
+    "SUPPORT" : {
+        "SUPPORT-FB"  :   "Support on Facebook",
+        "SUPPORT-TIP"  :   "(Leave your questions here!)"
+    },
+    "STARTED" : {
+        "WELCOME"       : "How to start mining? on",
+        "INTRO-LINE-1"  : "If you are new to mining, this is the place for you.",
+        "INTRO-LINE-2"  : "take a deep breath, its only confusing at first but pure joy once up and running",
+
+        "FIRST"         : {
+
+            "STEP-INTRO"    : "First step   : Create a Wallet",
+            "STEP-1"        : "Both online wallets and hardware wallets have their pros and cons:",
+            "STEP-2"        : "<a href=\"https://www.mymonero.com\" target=\"_blank\">MyMonero</a> is an online wallet maintained by the core monero team, so while safe is still suceptable to hacks.",
+            "STEP-3"        : "<a href=\"https://play.google.com/store/apps/details?id=xmr.org.freewallet.app\" target=\"_blank\">Free Wallet Monero</a> is an online/mobile wallet created by third parties, suceptable to hacks.",
+            "STEP-4"        : "<a href=\"https://getmonero.org/downloads/\" target=\"_blank\">Monero GUI Wallet</a> The safest way to safely store and secure your XMR, although it would be your responsibility to kee your XMR Safe"
+        },
+        "SECOND"        : {
+            "STEP-INTRO"    : "Second step  : Download mining software",
+            "STEP-INTRO-2"  : "Choose the miners according to your Hardware:",
+            "STEP-1"        : "<a href=\"https://1drv.ms/u/s!AivaIzU_l87LymsTBsVpXD2l9tzG\" target=\"_blank\">XMR-STAK-ALL-IN-ONE</a>",
+            "STEP-2"        : "<a href=\"https://mega.nz/#!EKIXWCwJ!0sZlQmB9bT_tuG1p4Mg-ONutX7wXdBPojFOtXNvuQrw\" target=\"_blank\">XMR-STAK-GPU AMD</a>",
+            "STEP-3"        : "<a href=\"https://mega.nz/#!kShXRTpa!G3Gy4WHVyaFq8rJ6gh0QkVBvmWCTK0VRj-Xv3eRx7Q8\" target=\"_blank\">XMR-STAK-GPU NVIDIA</a>",
+            "STEP-FINAL"    : "<i>The files are compressed with <a href=\"http://www.7-zip.org/download.html\" target=\"_blank\">7zip</a> and the password is : <b>cryptominers.cl</b></i>",
+            "STEP-NOTE"     : "Note: <i>Some antivirus may flag this file as a 'virus'. because some malware install miners on your pc without your consent. (just whitelist this file on your antivirus/firewall)</i>"
+        },
+        "THIRD"         : {
+            "STEP-INTRO"    : "Third step   : Pick a server and port",
+            "STEP-INTRO-2"  : "There are 2 important things here the <b>URL</b> and the <b>port</b> that you are going to connect to",
+            "STEP-1"        : "<p>You need to pick your URL and Port from the Ports List. Here you'll notice theres Global, PPLNS, Solo (<a href=\"#/help/faq\">?</a>)</p><p>Global is simply a collection of both PPLNS & Solo ports powerd by GEODNS. <br/>GEODNS automagically finds the closest server to you and could also be used to shares you in case of a regional outage.</p><p>If you prefer to shave off a few of those ms and connect directly, you have the option to select your preferred endpoint too.</p><p>The Port is used in conjunciton with the url and is used to specify the starting difficulty. You should select this depending on the total #ing power of your rig (see port descriptions).</p><p>If you are an advanced user or would like to set a fixed difficulty. examples below.</p>",
+            "VIEW-PORTS"    : "View Ports list"
+        },
+        "ALLTOGETHER"   : {
+            "INTRO"         : "The moment",
+            "INTRO-2"       : "OK So by now you should have a wallet, mining software, url and port. Its time to put them together.",
+            "TODO"          : "<p>Here are some examples of the parameters that you need to pass on to your miner software, the format matters so be careful.</p><p>Depending on your miner you need to add the required parameters via command line or config.txt</p><p>Required fields are payment <b>address</b> and <b>MinerIdentifier</b></p>",
+            "ENJOY"         : "Happy Minning!"
+        }
+    },
+    "WELCOME-PAGE"  :   {
+        "INTRO"             : "We are proud to announce our MONERO pool!",
+        "INTRO-2"           : "Everyone is welcome to join our super sleek pool with a very low fee (0.5%) plus we have an Extra reward system!",
+        "IMPORTANT"         : "Important!",
+        "BONUS-IMPORTANT"   : "The first <b>10 blocks</b> would give a reward bonus to all the miners! (based on your H/s) as a thank for helping us to build this POOL!",
+        "BONUS-IMPORTANT-2" : "<p>Use our \"tuned\" mining software for windows in our POOL and low you fee to <b>0% </b> (other pools is around 1% to 2.5%) </p>",
+        "DOWNLOAD-TEXT"     : "Download",
+        "TIP"               : "<p><b>Tip:</b> Unzip with <a href=\"http://www.7-zip.org/download.html\" target=\"_blank\">7zip</a> and the password for the file is : cryptominers.cl</p>",
+        "EXAMPLE-TEXT-1"    : "Our tuned XMR-STAK software should look like this once is running:",
+        "EXAMPLE-TEXT-2"    : "XMR-STAK Config sample:"
+    },
+    "DASHBOARD"     :   {
+        "POOLSTATS"    :   {
+            "HASHESACCEPTED": "Hashes Accepted",
+            "BLOCKSFOUND"   : "Blocks Found",
+            "MINERSONLINE"  : "Miners Connected",
+            "MINERSPAID"    : "Miners Paid",
+            "WEEKLYFOUND"   : "Weekly Avg. for a Block",
+            "WEEKLYFOUNDTT" : "Weekly average to find a Block in the network (more KH/s increase this value)",
+            "DAYTOFOUND"    : "Avg. Days to find a block",
+            "DAYTOFOUNDTT"  : "Probability to found a block in days",
+            "REWARDDAILY"   : "Avg. Daily pool reward",
+            "REWARDDAILYTT" : "An estimated amount of how much XMR the pool should get daily."
+        }
+    }
+}

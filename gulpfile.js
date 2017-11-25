@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var connect = require('gulp-connect');
 var manifest = require('gulp-manifest');
+var rename = require('gulp-rename');
 
 gulp.task('html', function(){
   return gulp.src(['app/**/*.html', '!app/vendor/**/*'])
@@ -21,6 +22,14 @@ gulp.task('js', function(){
 });
 
 gulp.task('json', function(){
+
+  gulp.src("./app/utils/locale-es_ES.json")
+  .pipe(rename("utils/locale-es.json"))
+  .pipe(gulp.dest("./build"));
+  gulp.src("./app/utils/locale-en_US.json")
+  .pipe(rename("utils/locale-en.json"))
+  .pipe(gulp.dest("./build"));
+
   return gulp.src(['app/**/locale-*.json', '!app/vendor/**/*'])
     .pipe(connect.reload())
     .pipe(gulp.dest('build/'))
@@ -74,7 +83,7 @@ gulp.task('watch', function () {
   gulp.watch(['./app/**/*.css'], ['css', 'manifest']);
   gulp.watch(['./app/**/*.js'], ['js', 'manifest']);
   gulp.watch(['./assets/*.*'], ['assets', 'manifest']);
-  gulp.watch(['./utils/*.*'], ['json', 'manifest']);
+  gulp.watch(['./app/utils/*.json'], ['json', 'manifest']);
 });
 
 gulp.task('manifest', function(){

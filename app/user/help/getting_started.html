@@ -37,8 +37,6 @@
 				<p class="panel-subtitle"><span ng-bind-html="'STARTED.SECOND.STEP-INTRO-2' | translate"></span></p>
 				<ul>
 					<li><p class="panel-subtitle"><span ng-bind-html="'STARTED.SECOND.STEP-1' | translate"></span></p></li>
-					<li><p class="panel-subtitle"><span ng-bind-html="'STARTED.SECOND.STEP-2' | translate"></span></p></li>
-					<li><p class="panel-subtitle"><span ng-bind-html="'STARTED.SECOND.STEP-3' | translate"></span></p></li>
 				</ul>
 				<p class="panel-subtitle"><span ng-bind-html="'STARTED.SECOND.STEP-FINAL' | translate"></span></p>
 				<p class="panel-subtitle"><span ng-bind-html="'STARTED.SECOND.STEP-NOTE' | translate"></span></p>
@@ -55,7 +53,7 @@
 				<span ng-bind-html="'STARTED.THIRD.STEP-1' | translate"></span>
 				<div flex layout="row">
 					<div flex></div>
-					<md-button ng-click="viewPorts($event)"><span ng-bind-html="'STARTED.THIRD.VIEW-PORTS' | translate"></span></md-button>
+					<md-button aria-label="View Ports" ng-click="viewPorts($event)"><span ng-bind-html="'STARTED.THIRD.VIEW-PORTS' | translate"></span></md-button>
 					<div flex></div>
 				</div>
 				<!-- <p class="panel-subtitle">Curious what the port types are?  Most miners are best served by PPLNS, which

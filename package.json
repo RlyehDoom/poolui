@@ -1,6 +1,6 @@
 {
-  "name": "xmrpoolui",
-  "description": "UI for XMR Pool.net",
+  "name": "cryptominers-ui",
+  "description": "UI for CRYPTOMINERS.CL",
   "repository": "",
   "license": "?",
   "devDependencies": {
@@ -17,7 +17,9 @@
     "start": "gulp"
   },
   "dependencies": {
+    "angular-material": "^1.1.5",
     "angular-sanitize": "^1.6.6",
+    "gulp-rename": "^1.2.2",
     "n3-charts": "^2.0.28",
     "randomcolor": "^0.4.4"
   }
